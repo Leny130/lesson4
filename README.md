@@ -39,4 +39,4 @@ Process 81809 waits for ShareLock on transaction 609; blocked by process 81918.
 HINT:  See server log for query details.
 CONTEXT:  while updating tuple (0,3) in relation "accounts"
 ```
-
+Гуглил где находтся лог posgresql, оказалось у меня его нет. Смотрел здесь cd /var/lib/postgresql/13/main 
