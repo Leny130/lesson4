@@ -40,3 +40,10 @@ HINT:  See server log for query details.
 CONTEXT:  while updating tuple (0,3) in relation "accounts"
 ```
 Гуглил где находтся лог posgresql, оказалось у меня его нет. Смотрел здесь cd /var/lib/postgresql/13/main 
+```
+show data_directory;
+       data_directory
+-----------------------------
+ /var/lib/postgresql/13/main
+(1 row)
+```
