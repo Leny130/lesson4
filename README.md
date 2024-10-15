@@ -41,9 +41,8 @@ CONTEXT:  while updating tuple (0,3) in relation "accounts"
 ```
 Гуглил где находтся лог posgresql, оказалось у меня его нет. Смотрел здесь cd /var/lib/postgresql/13/main 
 ```
-show data_directory;
-       data_directory
------------------------------
- /var/lib/postgresql/13/main
-(1 row)
+2024-10-14 20:01:44.660 MSK [81809] postgres@isotest3 WARNING:  there is already a transaction in progress
+2024-10-14 20:05:01.652 MSK [81918] postgres@isotest3 ERROR:  deadlock detected
+2024-10-14 20:05:01.652 MSK [81918] postgres@isotest3 DETAIL:  Process 81918 waits for ShareLock on transaction 608; blocked by process >
+        Process 81809 waits for ShareLock on transaction 609; blocked by process 81918.
 ```
